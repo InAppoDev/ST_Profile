@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Geometria-Bold.ttf">
+            <string>Geometria-Bold</string>
+        </array>
+        <array key="Geometria.ttf">
+            <string>Geometria</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GenderViewController" customModule="st_profile" customModuleProvider="target">
+            <connections>
+                <outlet property="backButtonOutlet" destination="jDc-g8-Lbe" id="0cW-Vf-lYb"/>
+                <outlet property="femaleGenderButton" destination="SAo-KV-la3" id="hPy-fy-sns"/>
+                <outlet property="maleGenderButton" destination="bqp-lP-dph" id="JiB-PH-69s"/>
+                <outlet property="titleLabel" destination="8lP-er-2U9" id="Mff-Cd-HbE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Weo-Hb-Yyu">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDc-g8-Lbe">
+                    <rect key="frame" x="182" y="810" width="50" height="32"/>
+                    <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="17"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Назад">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="25"/>
+                    </variation>
+                    <connections>
+                        <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="lmt-BK-uxK"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="УКАЖИТЕ ВАШ ПОЛ, ПОЖАЛУЙСТА." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lP-er-2U9">
+                    <rect key="frame" x="40" y="84" width="334" height="47"/>
+                    <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="27"/>
+                    </variation>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="fmW-Ks-ZvC">
+                    <rect key="frame" x="20" y="191" width="374" height="121"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqp-lP-dph">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Bfr-bu-8dV">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                </constraint>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Мужской">
+                                <color key="titleColor" systemColor="labelColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="27"/>
+                            </variation>
+                            <connections>
+                                <action selector="maleGenderTapped:" destination="-1" eventType="touchUpInside" id="CAj-5f-aqi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAo-KV-la3">
+                            <rect key="frame" x="0.0" y="71" width="374" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="XDC-9S-MgT">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                </constraint>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Женский">
+                                <color key="titleColor" systemColor="labelColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="27"/>
+                            </variation>
+                            <connections>
+                                <action selector="femaleGenderTapped:" destination="-1" eventType="touchUpInside" id="DWv-HQ-Vfs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jDc-g8-Lbe" secondAttribute="bottom" constant="20" id="DoI-Zl-fiv"/>
+                <constraint firstItem="Weo-Hb-Yyu" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Jww-JV-uFr"/>
+                <constraint firstItem="8lP-er-2U9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="Mcu-mj-1Er"/>
+                <constraint firstItem="jDc-g8-Lbe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SOJ-xh-XK8"/>
+                <constraint firstItem="fmW-Ks-ZvC" firstAttribute="top" secondItem="8lP-er-2U9" secondAttribute="bottom" constant="60" id="UKY-KV-bMo"/>
+                <constraint firstItem="Weo-Hb-Yyu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UvA-ke-8Zy"/>
+                <constraint firstItem="Weo-Hb-Yyu" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="Vek-u5-v5z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8lP-er-2U9" secondAttribute="trailing" constant="40" id="WCP-vi-Dgl"/>
+                <constraint firstItem="8lP-er-2U9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="Xml-b5-Zuf"/>
+                <constraint firstItem="Weo-Hb-Yyu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dYV-PE-upR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fmW-Ks-ZvC" secondAttribute="trailing" constant="20" id="lc8-Ut-Noa">
+                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                </constraint>
+                <constraint firstItem="fmW-Ks-ZvC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qoP-H0-4Hp">
+                    <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                </constraint>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="640" height="1136"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

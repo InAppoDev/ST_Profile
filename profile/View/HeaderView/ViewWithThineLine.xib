@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Geometria.ttf">
+            <string>Geometria</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewWithThineLine" customModule="swim_training" customModuleProvider="target">
+            <connections>
+                <outlet property="dateLabel" destination="l9x-R7-qoh" id="Pwx-sb-dEw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="831" height="86"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВЧЕРА" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9x-R7-qoh">
+                    <rect key="frame" x="381.5" y="33" width="68" height="20"/>
+                    <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="20"/>
+                    <color key="textColor" red="0.01176470588" green="0.16862745100000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="26"/>
+                    </variation>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRp-d5-UBP">
+                    <rect key="frame" x="454.5" y="42.5" width="376.5" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="WGV-uR-Agp">
+                            <variation key="heightClass=regular-widthClass=regular" constant="3"/>
+                        </constraint>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yu2-AO-PAa">
+                    <rect key="frame" x="0.0" y="42.5" width="376.5" height="1"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="vpy-7A-Fx4">
+                            <variation key="heightClass=regular-widthClass=regular" constant="3"/>
+                        </constraint>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="sRp-d5-UBP" secondAttribute="trailing" id="6N8-nZ-xHZ"/>
+                <constraint firstItem="sRp-d5-UBP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BEO-Lz-Obr"/>
+                <constraint firstItem="l9x-R7-qoh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FMx-Kj-uMF"/>
+                <constraint firstItem="l9x-R7-qoh" firstAttribute="leading" secondItem="yu2-AO-PAa" secondAttribute="trailing" constant="5" id="Vmw-44-WGn"/>
+                <constraint firstItem="l9x-R7-qoh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="XhD-vo-o5S"/>
+                <constraint firstItem="yu2-AO-PAa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gDq-2P-DOk"/>
+                <constraint firstItem="yu2-AO-PAa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ghs-x2-sMe"/>
+                <constraint firstItem="sRp-d5-UBP" firstAttribute="leading" secondItem="l9x-R7-qoh" secondAttribute="trailing" constant="5" id="tts-D9-13b"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="438.40579710144931" y="-191.51785714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

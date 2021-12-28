@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Geometria-Bold.ttf">
+            <string>Geometria-Bold</string>
+        </array>
+        <array key="Geometria.ttf">
+            <string>Geometria</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STProfileViewController" customModule="st_profile" customModuleProvider="target">
+            <connections>
+                <outlet property="allAwardsButtonOutlet" destination="g2V-Gh-0I3" id="Rbc-QZ-deD"/>
+                <outlet property="awardView" destination="WbA-0R-hgB" id="lkH-3Q-xZ3"/>
+                <outlet property="awardViewTwo" destination="Pqy-1n-mb5" id="9aD-ej-vuv"/>
+                <outlet property="distanceLabel" destination="rx1-Gd-HNe" id="pq6-gx-1Hd"/>
+                <outlet property="distanceTitle" destination="qvk-hK-H42" id="Lyt-cT-aUo"/>
+                <outlet property="footerView" destination="CkP-ub-8aW" id="QXR-TG-tDB"/>
+                <outlet property="kcalLabel" destination="GXQ-wE-8aM" id="ReP-LO-MF9"/>
+                <outlet property="kcalTitle" destination="MAu-K6-mEe" id="9aD-Zq-EtO"/>
+                <outlet property="myDataButtonOutlet" destination="bnn-Jw-acl" id="AGu-er-8N9"/>
+                <outlet property="myFriendsButtonOutlet" destination="Tah-cf-HPv" id="Xls-TU-fWd"/>
+                <outlet property="profileImage" destination="Azy-qz-XTR" id="Wfm-St-4Fj"/>
+                <outlet property="timeLabel" destination="T2U-t0-BwN" id="i5z-bk-rZY"/>
+                <outlet property="timeTitle" destination="9xL-q2-91p" id="ArN-J1-kvB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgB-wd-PDa">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWa-QC-3OP">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="897.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="C6E-2h-JzV">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="369.5"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Azy-qz-XTR">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="250" id="Pcr-S8-5ak">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="300"/>
+                                                </constraint>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="tP4-mi-xnv">
+                                            <rect key="frame" x="37.5" y="275" width="339" height="94.5"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bwF-mY-Qja">
+                                                    <rect key="frame" x="10" y="8" width="87.5" height="78.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="distance" translatesAutoresizingMaskIntoConstraints="NO" id="nAy-Fh-sMc">
+                                                            <rect key="frame" x="31.5" y="0.0" width="25" height="25"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="127" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="rx1-Gd-HNe">
+                                                            <rect key="frame" x="23" y="30" width="42" height="29.5"/>
+                                                            <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="25"/>
+                                                            <color key="textColor" red="0.01176470588" green="0.16862745100000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="35"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Расстояние, км" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvk-hK-H42">
+                                                            <rect key="frame" x="0.0" y="64.5" width="87.5" height="14"/>
+                                                            <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="12"/>
+                                                            <color key="textColor" red="0.01176470588" green="0.16862745100000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="22"/>
+                                                            </variation>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YXw-Z2-gL9">
+                                                    <rect key="frame" x="122.5" y="8" width="97.5" height="78.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="2ti-pa-yBu">
+                                                            <rect key="frame" x="36.5" y="0.0" width="25" height="25"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:50:60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="T2U-t0-BwN">
+                                                            <rect key="frame" x="0.0" y="30" width="97.5" height="29.5"/>
+                                                            <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="25"/>
+                                                            <color key="textColor" red="0.01176470588" green="0.16862745100000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="35"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Время" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xL-q2-91p">
+                                                            <rect key="frame" x="30.5" y="64.5" width="36.5" height="14"/>
+                                                            <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="12"/>
+                                                            <color key="textColor" red="0.01176470588" green="0.16862745100000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="22"/>
+                                                            </variation>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8I5-Fg-nbV">
+                                                    <rect key="frame" x="245" y="8" width="84" height="78.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="ccl" translatesAutoresizingMaskIntoConstraints="NO" id="y9H-eY-J5m">
+                                                            <rect key="frame" x="29.5" y="0.0" width="25" height="25"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.40000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="GXQ-wE-8aM">
+                                                            <rect key="frame" x="14" y="30" width="56" height="29.5"/>
+                                                            <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="25"/>
+                                                            <color key="textColor" red="0.01176470588" green="0.16862745100000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="35"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Потрачно ккал" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAu-K6-mEe">
+                                                            <rect key="frame" x="0.0" y="64.5" width="84" height="14"/>
+                                                            <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="12"/>
+                                                            <color key="textColor" red="0.01176470588" green="0.16862745100000001" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=regular">
+                                                                <fontDescription key="fontDescription" name="Geometria" family="Geometria" pointSize="22"/>
+                                                            </variation>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <edgeInsets key="layoutMargins" top="8" left="10" bottom="8" right="10"/>
+                                            <variation key="heightClass=regular-widthClass=regular" spacing="35"/>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Azy-qz-XTR" firstAttribute="width" secondItem="C6E-2h-JzV" secondAttribute="width" id="fEK-iU-Mdy"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="L7S-R9-g5t">
+                                    <rect key="frame" x="20" y="389.5" width="374" height="108"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnn-Jw-acl" customClass="GradientButton" customModule="st_profile" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                            <color key="backgroundColor" red="0.0078431372550000003" green="0.17254901959999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="E5F-c6-k44">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                                </constraint>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="20"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Мои данные">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="27"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="myDataTapped:" destination="-1" eventType="touchUpInside" id="a0b-mT-s4g"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tah-cf-HPv" customClass="GradientButton" customModule="st_profile" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="58" width="374" height="50"/>
+                                            <color key="backgroundColor" red="0.0078431372550000003" green="0.17254901959999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="19D-4W-nBM">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                                </constraint>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="20"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Мои друзья">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="4"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="27"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="myFriendsTapped:" destination="-1" eventType="touchUpInside" id="u5X-76-q0D"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CkP-ub-8aW" customClass="ViewWithThineLine" customModule="st_profile" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="517.5" width="414" height="20"/>
+                                    <color key="backgroundColor" red="0.01176470588" green="0.16862745100000001" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="tOS-4Q-8Z5"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Erm-64-PQM">
+                                    <rect key="frame" x="20" y="557.5" width="374" height="250"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WbA-0R-hgB" customClass="AwardView" customModule="st_profile" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="177" height="250"/>
+                                            <color key="backgroundColor" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="250" id="wAF-BV-rbW"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pqy-1n-mb5" customClass="AwardView" customModule="st_profile" customModuleProvider="target">
+                                            <rect key="frame" x="197" y="0.0" width="177" height="250"/>
+                                            <color key="backgroundColor" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="250" id="mYO-w6-uu8"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2V-Gh-0I3" customClass="GradientButton" customModule="st_profile" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="827.5" width="374" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="OAM-cE-rlk">
+                                            <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                        </constraint>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="20"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Смотреть все награды">
+                                        <color key="titleColor" red="0.79215686269999996" green="0.050980392159999999" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.79215686269999996" green="0.050980392159999999" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" name="Geometria-Bold" family="Geometria" pointSize="27"/>
+                                    </variation>
+                                    <connections>
+                                        <action selector="allAwardsTapped:" destination="-1" eventType="touchUpInside" id="YEe-JZ-kMt"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="CkP-ub-8aW" secondAttribute="trailing" id="4u5-Vo-f2K"/>
+                                <constraint firstItem="L7S-R9-g5t" firstAttribute="top" secondItem="C6E-2h-JzV" secondAttribute="bottom" constant="20" id="A41-w8-GUx">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                                </constraint>
+                                <constraint firstItem="CkP-ub-8aW" firstAttribute="leading" secondItem="EWa-QC-3OP" secondAttribute="leading" id="DYG-pN-KtA"/>
+                                <constraint firstItem="L7S-R9-g5t" firstAttribute="leading" secondItem="EWa-QC-3OP" secondAttribute="leading" constant="20" id="Fer-kw-8Th">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="g2V-Gh-0I3" secondAttribute="trailing" constant="20" id="IMY-tR-iyz">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                </constraint>
+                                <constraint firstItem="C6E-2h-JzV" firstAttribute="leading" secondItem="EWa-QC-3OP" secondAttribute="leading" id="Pum-MC-dbJ"/>
+                                <constraint firstAttribute="bottom" secondItem="g2V-Gh-0I3" secondAttribute="bottom" constant="20" id="Q8V-NV-3cJ"/>
+                                <constraint firstItem="CkP-ub-8aW" firstAttribute="top" secondItem="L7S-R9-g5t" secondAttribute="bottom" constant="20" id="Rou-IM-13S"/>
+                                <constraint firstItem="C6E-2h-JzV" firstAttribute="top" secondItem="EWa-QC-3OP" secondAttribute="top" id="cSI-42-IqO"/>
+                                <constraint firstItem="g2V-Gh-0I3" firstAttribute="leading" secondItem="EWa-QC-3OP" secondAttribute="leading" constant="20" id="hY9-AB-Tbf">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="C6E-2h-JzV" secondAttribute="trailing" id="hkx-lK-d8X"/>
+                                <constraint firstItem="Erm-64-PQM" firstAttribute="leading" secondItem="EWa-QC-3OP" secondAttribute="leading" constant="20" id="jPW-Eg-2PI">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                </constraint>
+                                <constraint firstItem="Erm-64-PQM" firstAttribute="top" secondItem="CkP-ub-8aW" secondAttribute="bottom" constant="20" id="qN6-cD-0ZE"/>
+                                <constraint firstItem="g2V-Gh-0I3" firstAttribute="top" secondItem="Erm-64-PQM" secondAttribute="bottom" constant="20" id="rUl-qU-yMF"/>
+                                <constraint firstAttribute="trailing" secondItem="Erm-64-PQM" secondAttribute="trailing" constant="20" id="sGn-Ql-7B0">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                </constraint>
+                                <constraint firstAttribute="trailing" secondItem="L7S-R9-g5t" secondAttribute="trailing" constant="20" id="zRe-Ns-SZA">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                </constraint>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="EWa-QC-3OP" firstAttribute="top" secondItem="Gkv-J6-hLF" secondAttribute="top" id="1PJ-EA-bDb"/>
+                        <constraint firstItem="Gkv-J6-hLF" firstAttribute="bottom" secondItem="EWa-QC-3OP" secondAttribute="bottom" id="1iJ-ft-re5"/>
+                        <constraint firstItem="EWa-QC-3OP" firstAttribute="leading" secondItem="Gkv-J6-hLF" secondAttribute="leading" id="ESK-3i-QHR"/>
+                        <constraint firstItem="EWa-QC-3OP" firstAttribute="width" secondItem="hiU-NH-whd" secondAttribute="width" id="UgY-IN-KQT"/>
+                        <constraint firstItem="Gkv-J6-hLF" firstAttribute="trailing" secondItem="EWa-QC-3OP" secondAttribute="trailing" id="od4-hx-o2d"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="Gkv-J6-hLF"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="hiU-NH-whd"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zgB-wd-PDa" secondAttribute="trailing" id="BtS-F1-BaE"/>
+                <constraint firstItem="zgB-wd-PDa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="g1o-3g-5LY"/>
+                <constraint firstItem="zgB-wd-PDa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jiQ-HZ-2Hl"/>
+                <constraint firstItem="zgB-wd-PDa" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="nAd-lS-8Bi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Tah-cf-HPv">
+            <size key="intrinsicContentSize" width="111" height="36"/>
+        </designable>
+        <designable name="bnn-Jw-acl">
+            <size key="intrinsicContentSize" width="116" height="36"/>
+        </designable>
+        <designable name="g2V-Gh-0I3">
+            <size key="intrinsicContentSize" width="214" height="36"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ccl" width="25" height="25"/>
+        <image name="distance" width="25" height="25"/>
+        <image name="time" width="25" height="25"/>
+    </resources>
+</document>
